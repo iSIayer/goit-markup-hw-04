@@ -9,6 +9,7 @@
   --accent-topcolor: #000000;
   --button-color: #e5e5e5;
   --border-cardscolor: #eeeeee;
+  --primary-color-icons: #afb1b8;
   --card-set-gap: 30px;
 }
 html {
@@ -149,9 +150,22 @@ li.header-item:not(:last-child) {
 .hero {
   background-color: var(--bacground-color);
   text-align: center;
+}
+
+.container-hero {
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-image.jpg);
+  max-width: 1600px;
+  background-repeat: no-repeat;
+  background-position: center;
   padding-top: 200px;
   padding-bottom: 200px;
+  margin: 0 auto;
 }
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -180,12 +194,37 @@ li.header-item:not(:last-child) {
 }
 
 /* -------------------Services--------------------------- */
-main .doing {
-  padding-top: 0;
-}
 
 .services-item {
   flex-basis: calc(100% / 4 - var(--card-set-gap));
+}
+
+.services-item::before {
+  content: "";
+  display: block;
+  margin-bottom: 30px;
+  background-color: var(--background-precolor);
+  height: 120px;
+  background-size: 70px, 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 4px;
+}
+
+.details-icon::before {
+  background-image: url(../images/antenna.svg);
+}
+
+.punctual-icon::before {
+  background-image: url(../images/clock.svg);
+}
+
+.plan-icon::before {
+  background-image: url(../images/diagram.svg);
+}
+
+.technology-icon::before {
+  background-image: url(../images/astronaut.svg);
 }
 
 .services-title {
@@ -198,6 +237,10 @@ main .doing {
 }
 
 /* ---------------------------Doing---------------------------- */
+
+main .doing {
+  padding-top: 0;
+}
 
 .section-title {
   font-weight: bold;
