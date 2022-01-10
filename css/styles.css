@@ -293,7 +293,7 @@ main .doing {
   margin-bottom: 10px;
 }
 .card-title {
-  padding: 30px 55px;
+  padding: 30px 32px;
 }
 
 .social-card {
@@ -383,6 +383,45 @@ main .doing {
 .pf-wrapper {
   padding: 20px 24px;
   border: 1px solid var(--border-cardscolor);
+}
+
+/* -------------------------Our Clients-------------------- */
+.clients-set {
+}
+
+.clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  flex-basis: calc(100% / 6 - var(--card-set-gap));
+  border: 1px solid var(--primary-color-icons);
+  border-radius: 4px;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  border: 1px solid var(--accent-color);
+}
+
+.clients-link:hover > .icon-clients,
+.clients-link:focus > .icon-clients {
+  fill: var(--accent-color);
+}
+
+.clients-item {
+  background-color: var(--primary-color);
+}
+
+.clients-icon {
+  justify-content: center;
+  align-items: center;
+  fill: var(--primary-color-icons);
+}
+
+.icon-clients {
+  fill: var(--primary-color-icons);
 }
 /* -------------------------Footer------------------------ */
 
