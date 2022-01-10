@@ -121,8 +121,11 @@ button {
   color: var(--brand-color);
   display: flex;
 }
-li.header-item:not(:last-child) {
+.header-item:not(:last-child) {
   margin-right: 50px;
+}
+.header-connect > .header-item:nth-child(1) {
+  margin-right: 30px;
 }
 
 .header-connect {
@@ -135,17 +138,25 @@ li.header-item:not(:last-child) {
   font-weight: 500;
   line-height: 16px;
   letter-spacing: 0.02em;
-  display: inline-block;
   padding: 32px 0;
 }
+
+.set-link {
+  display: flex;
+  align-items: center;
+}
+
+.connect-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
 .header-link:focus,
 .header-link:hover,
 .current {
   color: var(--accent-color);
 }
-.header-tel {
-  margin-left: 50px;
-}
+
 /* ------------------------Hero------------------------- */
 .hero {
   background-color: var(--bacground-color);
@@ -283,6 +294,32 @@ main .doing {
 }
 .card-title {
   padding: 30px 55px;
+}
+
+.social-card {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.social-card-link {
+  display: flex;
+  color: var(--primary-color-icons);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-card-link:hover,
+.social-card-link:focus {
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+}
+
+.icon-card-social {
+  fill: currentColor;
 }
 
 /* ------------------------------Section Portfolio-------------------------- */
